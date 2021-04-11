@@ -1,17 +1,14 @@
-# Template Python on Docker
+# FileReadWrite_inPython
+Pythonでファイル読み書き
 
-## 使い方
+## 実行
 
-1. Dockerfileのimageを変更する。
-2. 必要に応じてDockerfileにpipを書く。
-3. 必要に応じてdocker-compose.ymlを修正する。
-4. 下記実行。
-    ``` sh
-    docker-compose build
-    docker-compose up
-    ```
+``` sh
+docker-compose up
+```
 
 ## 参考
 
-- [Qiita:Docker を使う（python のイメージで色々確認してみる）](https://qiita.com/landwarrior/items/fd918da9ebae20486b81)
-- [Future Tech Blog:仕事でPythonコンテナをデプロイする人向けのDockerfile (1): オールマイティ編](https://future-architect.github.io/articles/20200513/)
+- [Pythonでファイルの読み込み、書き込み（作成・追記）:note.nkmk.me](https://note.nkmk.me/python-file-io-open-with/)
+  - 本当はたくさん方法がある。ここをみる。
+- [time.strftime:Python](https://docs.python.org/ja/3/library/time.html#time.strftime)
