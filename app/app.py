@@ -13,9 +13,10 @@ JST = timezone(timedelta(hours=+9), 'JST')
 now = datetime.now(JST).strftime(DATE_FORMAT)
 OUTPUT_PATH = './files/output_' + now + '.txt'
 
-
-files = [p for p in glob.glob(INPUT_PATH , recursive=True) if os.path.isfile(p)]
+print('INPUT_PATH : {}'.format(INPUT_PATH))
+files = [p for p in glob.glob(INPUT_PATH , recursive=True) if (os.path.isfile(p) and os.path.splitext(p)[1][1:] != 'csv')]
 print(files)
+print(type(files))
 
 lines=[]
 
